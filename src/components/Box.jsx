@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Box = (props) => (
-    <div className="Box" >
-        
+    <div className="Box" value={props.value} onClick={props.onClick}>
+        {props.value}
     </div>
 );
 

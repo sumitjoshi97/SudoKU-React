@@ -1,10 +1,24 @@
 import React, {Component} from 'react';
-import Board from  './Board';
+import Board from './Board';
+// import Buttons from './Buttons';
 
 class Home extends Component {
+    constructor(props) {
+        super();
+        this.state = {
+            xIsNext: null
+        }
+    }
+
+
+
     render() {
         return (
-            <Board />
+            <div>
+                {/* <Buttons/> */}
+                <Board />
+            </div>
+
         )
     }
 }
